@@ -1,0 +1,23 @@
+{
+  "name": "cicd-demo-app",
+  "version": "1.0.0",
+  "description": "Minimal Node app for practicing the Jenkins CI/CD pipeline",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest --ci --coverage --reporters=default --reporters=jest-junit"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0",
+    "supertest": "^7.0.0"
+  },
+  "jest-junit": {
+    "outputDirectory": "reports",
+    "outputName": "junit.xml"
+  }
+}
+
