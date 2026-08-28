@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../src/index');
+const app = require('../index');
 
 describe('GET /', () => {
   it('responds with a running message', async () => {
