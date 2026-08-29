@@ -40,7 +40,7 @@ pipeline {
                             ${scannerHome}/bin/sonar-scanner \
                               -Dsonar.organization=prajvalg2110-max \
                               -Dsonar.projectKey=prajvalg2110-max_First-project \
-                              -Dsonar.sources=src \
+                              -Dsonar.sources=.
                               -Dsonar.tests=test \
                               -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
                         """
